@@ -26,9 +26,9 @@ body{
     font-family: 'Posterama';
     scroll-behavior: smooth;
     user-select: none;
-    background-color: var(--watermelon);
+    /* background-color: var(--watermelon); */
     /* background: url(Images/SVG/Turing\ Patern6-1.svg) fixed; */
-    background: url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+    /* background: var(--watermelon) url(Images/SVG/Turing\ Patern6-2.svg) fixed; */
     overflow: overlay;
 }
 
@@ -48,21 +48,6 @@ header{
     width: 100%;
     height: 100px;
     color: black;
-    /* background-color: var(--watermelon); */
-    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
-
-
-    /* background: url(Images/SVG/Turing\ Patern4-3-3.svg) fixed; */
-    /* background: url(Images/SVG/Turing\ Patern6-1.svg) fixed; ELLE EST BIEN CELLE LÀ*/
-    /* background: url(Images/SVG/Turing\ Patern5-5\ banniere.svg); */
-
-
-    /* background-color: var(--watermelon); */
-    /* background-image: url(Images/SVG/Banière\ headerV3.svg); */
-    /* background: url(Images/SVG/Turing\ Patern5-5\ banniere.svg) fixed; */
-    /* background: url(Images/SVG/Turing\ Patern4-3-3.svg) fixed; */
-    /* background-image: url(Images/SVG/Test-taille-bannière-typeWeb.jpg); */
-    /* background-repeat: no-repeat no-repeat; */
 }
 
 #header-wrapper{
@@ -113,7 +98,6 @@ header{
 /* MAIN */
 
 main{
-    /* background-color: white; */
     border: transparent 1px solid; /* Sinon ça fait le bordel au niveau du footer */
 }
 
@@ -121,39 +105,24 @@ main{
     letter-spacing: .06rem;
 }
 
-#projet-title{
+/* #projet-title{
     width: 100%;
     height: 100px;
     margin-bottom: 15px;
-    /* z-index: 5; */
-    /* right: 50%; */
-    /* top: -10px; */
-    /* border: #2320f7 2px solid; */
-    /* justify-content: center; */
-    /* border: #009fad 3px solid; */
-    /* margin-left: 25px; */
 }
 
-#diag-project{
+#project-red-diag{
     z-index: 5;
     position: absolute;
     overflow: hidden;
     height: 100px;
     width: 75px;
-    /* background-color: var(--watermelon); */
-    /* background: left 0% / 1200% url(Images/SVG/Turing\ Patern6-1.svg); */
-
-    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; /* YYEEEESSSS !*/
-
-    /* background: url(Images/SVG/Turing\ Patern6-1.svg) fixed; */
     transform: skewX(-28deg) translate(50%);
     left: 45%;
     color: var(--blueberry3);
 }
 
-
-
-#diag-project2{
+#project-text-black{
     z-index: 4;
     position: absolute;
     height: 100px;
@@ -162,21 +131,21 @@ main{
     transform: translate(-13.8px, 0px);
 }
 
-#diag-project h2{
+#project-red-diag h2{
     position: absolute;
     transform: skewX(28deg);
     left: -55.3px;
     z-index: 4;
-    /* top: 10px; */
+} */
 
-    /* border: #3cf436 2px solid; */
-}
 
-#diag-project2 h2 span{
+
+
+#project-text-black h2 span{
     color: var(--watermelon);
 }
 
-#diag-project:hover{
+#project-red-diag:hover{
     color: white;
     /* background-color: #F4DE36; */
 }
@@ -324,6 +293,103 @@ section ul li div{
 }
 
 
+/* BACKGROUNDS */
+
+main{
+    background: white url(Images/SVG/Turing\ Patern6-2.svg) fixed;
+}
+
+body, header, #footer-wraper{
+    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+}
+
+/* BACKGROUND DIAG */
+
+#diag{
+    background: var(--blueberry3) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+}
+
+#diag:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: var(--blueberry3) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+    transform: skewX(28deg);
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+#projet-title{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    /* border: #1FC7D0 1px solid; */
+    /* align-items: center; */
+}
+
+#project-red-diag{
+    z-index: 5;
+    position: absolute;
+    overflow: hidden;
+    height: 100px;
+    width: 69.5px;
+    left: 50%;
+    margin-left: -40px;
+    /* top: 50%; */
+    transform: skewX(-26deg);
+    /* left: 45%; */
+    color: var(--blueberry3);
+}
+
+
+
+#project-red-diag:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+    transform: skewX(26deg) ;
+}
+
+#project-text-black{
+    z-index: 4;
+    position: absolute;
+    height: 100px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-13.8px, 0px); */
+}
+
+#project-red-diag h2{
+    position: absolute;
+    transform: skewX(26deg) translate(-53.3px);
+    /* left: -55.3px; */
+    z-index: 4;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
     #projets img{
         width: 600px;
@@ -333,4 +399,111 @@ section ul li div{
     main{
         font-size: 25pt;
     }
+
+    /* #projet-title h2{
+        font-size: 60pt;
+        left: -90px;
+    }
+
+    #projet-title{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 55px;
+    }
+
+    #project-red-diag{
+        margin-left: 35px;
+        z-index: 5;
+        position: absolute;
+        overflow: hidden;
+        height: 150px;
+        width: 112.5px;
+        transform: skewX(-28deg) ;
+        left: 37%;
+        color: var(--blueberry3);
+    }
+    
+    #project-red-diag:before{
+        content: "";
+        position: absolute;
+        height: 200%;
+        width: 200%;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+        background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+        transform: skewX(28deg);
+    }
+    
+    #project-text-black{
+        margin-left: 35px;
+        z-index: 4;
+        position: absolute;
+        height: 150px;
+        top: 10px;
+        left: 25%;
+        transform: translate(0px, 0px) translate(0%);
+    } */
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    #projet-title h2{
+        font-size: 54pt; /* +150% */
+    }
+
+    #projet-title{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+        margin-left: 25px;
+        /* border: #04f724 1px solid; */
+    }
+
+    #project-red-diag{
+        z-index: 5;
+        position: absolute;
+        overflow: hidden;
+        height: 150px;
+        width: 104.25px;
+        left: 50%;
+        margin-left: -60px;
+        transform: skewX(-26deg);
+        color: var(--blueberry3);
+    }
+
+
+
+    #project-red-diag:before{
+        content: "";
+        position: absolute;
+        height: 200%;
+        width: 200%;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+        background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+        transform: skewX(26deg) ;
+    }
+
+    #project-text-black{
+        z-index: 4;
+        position: absolute;
+        height: 100px;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #project-red-diag h2{
+        position: absolute;
+        left: -27px;
+        top: 15px;
+        /* transform: skewX(26deg) translate(-53.3); */
+        z-index: 4;
+    }
+
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
 }
