@@ -254,7 +254,8 @@ section ul li div{
 /* BACKGROUNDS */
 
 main{
-    background: url(Images/SVG/Turing\ Patern6-2.svg) fixed;
+/*     background: white url(Images/SVG/Turing\ Patern6-2.svg) fixed; */
+    background: white url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
 }
 
 body, header, #footer-wraper{
