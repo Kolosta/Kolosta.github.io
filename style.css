@@ -72,6 +72,7 @@ header{
     margin-left: 73px;
     transform: skewX(-28deg);
     color: var(--watermelon);
+    /* color: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; */
 }
 
 #diag h1{
@@ -100,7 +101,6 @@ main{
 #projets{
     letter-spacing: .06rem;
 }
-
 
 #project-text-black h2 span{
     color: var(--watermelon);
@@ -214,7 +214,7 @@ section ul li div{
     width: 100%;
     height: 45px;
     text-align: center;
-    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+    /* background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; */
     color: white;
     font-family:  'Quanelas Soft';
 }
@@ -255,12 +255,15 @@ section ul li div{
 
 main{
     background: white url(Images/SVG/Turing\ Patern6-2.svg) fixed;
-/*     background: white url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; */
 }
 
-body, header, #footer-wraper{
+header, #footer-wraper{
     background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
 }
+
+/* body{
+    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+} */
 
 /* BACKGROUND DIAG */
 
@@ -283,7 +286,7 @@ body, header, #footer-wraper{
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-
+/* DIAG PROJECT BACKGROUND AND OTHER */
 
 #projet-title{
     position: relative;
@@ -343,11 +346,89 @@ body, header, #footer-wraper{
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
+.toggle{
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox{
+    display: none;
+}
+
+.label{
+    height: 35px;
+    width: 35px;
+    background: var(--blueberry3) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px rgba(51, 51, 51, 0.281);
+}
+
+
+
+/* MODE HAUTE PERFORMANCES */
+
+
+/* BACKGROUNDS */
+
+.light-performance main{
+    background: white fixed;
+}
+
+body{
+    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+}
+
+.light-performance{
+    background: var(--watermelon);
+}
+
+.light-performance header, .light-performance #footer-wraper{
+    background: var(--watermelon) fixed;
+}
+
+.light-performance .label{
+    background: var(--blueberry3);
+}
+
+/* BACKGROUND DIAG */
+
+.light-performance #diag{
+    background: var(--blueberry3) fixed;
+}
+
+.light-performance #diag:before{
+    background: var(--blueberry3) fixed;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.light-performance #project-red-diag:before{
+    background: var(--watermelon)  fixed;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pour téléphones :  */
 
 @media screen and (max-width: 1200px) {
     #projets img{
@@ -419,5 +500,6 @@ body, header, #footer-wraper{
 
 
     /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
 
 }
