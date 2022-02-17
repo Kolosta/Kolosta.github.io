@@ -1,0 +1,858 @@
+:root{
+    --watermelon: #f4364c;
+    --watermelon-dark: #7a1b26;
+    /* --watermelon-dark: #EF354B; */
+    --watermelon-dark2: #EA3449;
+    /* --comp: #36F4DE; */
+    --blueberry: #1FC7D0;
+    --blueberry-dark: #34bbc2;
+    --banane: #F4DE36;
+    --banane-dark: #f4de36b2;
+    --gris: rgb(165, 165, 165);
+
+    --turing-light: url(Images/SVG/Turing\ Patern6-3\ 3percent.svg);
+    --turing-dark: url(Images/SVG/Turing\ Patern6-3\ 5percent.svg);
+    /* --turing-light: url(Images/SVG/Turing\ Patern6-2.svg);
+    --turing-dark: url(Images/SVG/Turing\ Patern6-transparent4percent.svg); */
+    /* --turing-light: url(Images/SVG/Turing\ Patern6-3\ 2percent.png);
+    --turing-dark: url(Images/SVG/Turing\ Patern6-3\ 4percent.png); */
+}
+
+@font-face {
+    font-family: 'Posterama';
+    src: url(Fonts/Polices/Posterama/Posterama-Text-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Quanelas Soft';
+    src: url(Fonts/Polices/Quanelas_soft/QanelasSoftMedium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Posterama';
+    scroll-behavior: smooth;
+    user-select: none;
+    overflow: overlay;
+    /* transition: 1s linear; */
+}
+
+/* ALL */
+
+
+
+h3{
+    font-family: 'Quanelas Soft';
+}
+
+/* HEADER */
+
+header{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    color: black;
+}
+
+#header-wrapper{
+    position: relative;
+}
+
+#logo{
+    transform: translateY(54%);
+    margin-left: 20px;
+    z-index: 4;
+}
+
+#logo span{
+    color: white;
+}
+
+
+#diag{
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    height: 100px;
+    width: 80px;
+    background-color: var(--blueberry);
+    margin-left: 73px;
+    transform: skewX(-28deg);
+    color: var(--watermelon);
+    /* color: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; */
+}
+
+#diag h1{
+    position: absolute;
+    transform: translateY(54%) skewX(28deg);
+    left: -55.3px;
+    z-index: 4;
+}
+
+#diag:hover{
+    color: white;
+}
+
+#diag h1 span{
+    color: white;
+}
+
+
+
+/* MAIN */
+
+main{
+    border: transparent 1px solid; /* Sinon ça fait le bordel au niveau du footer */
+}
+
+#projets{
+    letter-spacing: .06rem;
+}
+
+#project-text-black h2 span{
+    color: var(--watermelon);
+}
+
+#project-red-diag:hover{
+    color: white;
+    /* background-color: #F4DE36; */
+}
+
+
+#header-size{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: #1fadb9; */
+}
+
+#projets{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main ul{
+    list-style: none;
+}
+
+main section h2{
+    font-size: 36pt;
+    top: 10px;
+}
+
+#project-title{
+    width: 100%;
+    z-index: 5;
+    right: 50%;
+    top: -10px;
+    /* border: #2320f7 2px solid; */
+
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+#section-main, #section-projet{
+    position: relative;
+    display: block;
+    margin: 35px auto 20px auto;
+    padding-right: 25px;
+    width: 70%;
+    min-height: 150px;
+}
+
+section ul li div{
+    position: relative;
+    /* display: inline-block; */
+    text-align: center;
+
+    justify-content: center;
+    /* border: #ad0000 3px solid; */
+}
+
+section ul li{
+    margin: 20px 15px;
+    flex: 1 1 auto;
+
+    /* border-left: 1px #a1a1a17e solid; */
+}
+
+section ul li div img{
+
+    border-left: 2px #a1a1a17e solid;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* outline: 1px #5906f3 solid; */
+    /* outline-offset: 10px; */
+}
+
+#projets h3{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+/* COVOITURAGE */
+
+#section-projet{
+    /* min-height: 30rem; */
+    /* border: #e9e50a 3px solid; */
+}
+
+
+#covoiturage{
+    /* width: 800px;
+    height: 500px; */
+    /* border: #1FC7D0 3px solid; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER  */
+
+/* footer{
+    position: absolute;
+    bottom: 0px;
+} */
+
+#footer-wraper{
+    /* position: absolute; */
+    display: flex;
+    /* bottom: 0; */
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    /* background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed; */
+    color: white;
+    font-family:  'Quanelas Soft';
+}
+
+#footer-wraper p{
+    display: inline-block;
+    margin: auto 0px;
+    margin: auto;
+    font-size: large;
+    letter-spacing: .5rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gris);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blueberry);
+}
+
+
+#projets img{
+    width: 300px;
+    height: auto;
+}
+
+
+/* BACKGROUNDS */
+
+main{
+    background: white var(--turing-light) fixed;
+}
+
+header, #footer-wraper{
+    background: var(--watermelon) var(--turing-dark) fixed;
+}
+
+/* body{
+    background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+} */
+
+/* BACKGROUND DIAG */
+
+#diag{
+    background: var(--blueberry) var(--turing-dark) fixed;
+}
+
+#diag:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: var(--blueberry) var(--turing-dark) fixed;
+    transform: skewX(28deg);
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* DIAG PROJECT BACKGROUND AND OTHER */
+
+#projet-title{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    /* border: #1FC7D0 1px solid; */
+    /* align-items: center; */
+}
+
+#project-red-diag{
+    z-index: 5;
+    position: absolute;
+    overflow: hidden;
+    height: 100px;
+    width: 69.5px;
+    left: 50%;
+    margin-left: -40px;
+    /* top: 50%; */
+    transform: skewX(-26deg);
+    /* left: 45%; */
+    color: var(--blueberry);
+}
+
+
+
+#project-red-diag:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: var(--watermelon) var(--turing-dark) fixed;
+    transform: skewX(26deg) ;
+}
+
+#project-text-black{
+    z-index: 4;
+    position: absolute;
+    height: 100px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-13.8px, 0px); */
+}
+
+#project-red-diag h2{
+    position: absolute;
+    transform: skewX(26deg) translate(-53.3px);
+    /* left: -55.3px; */
+    z-index: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TESTS */
+
+
+
+#container-title{
+    position: relative;
+    /* border: #1FC7D0 3px solid; */
+    height: 11rem;
+    margin-left: 25px;
+    white-space: nowrap;
+}
+
+#title-behind{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -61.5%);
+}
+
+#title-behind h2{
+    transform: skewX(28deg);
+}
+
+#title-behind h2 span{
+    color: var(--watermelon);
+}
+
+#title-front{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -61.5%);
+}
+
+#title-front h2{
+    transform: skewX(28deg);
+}
+
+
+#title-diag{
+    position: absolute;
+    overflow: hidden;
+    color: var(--blueberry);
+    width: 9rem;
+    height: 13rem;
+    left: 50%;
+    transform: skew(-28deg);
+    margin-left: -4.5rem;
+    margin-top: -1rem;
+}
+
+#title-diag:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    background: var(--watermelon) var(--turing-dark) fixed;
+    transform: skewX(28deg);
+}
+
+#title-diag:hover{
+    color: white;
+}
+
+#title-no-diag{
+    position: absolute;
+    width: 9rem;
+    height: 13rem;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(-28deg);
+}
+
+
+
+/* LOGO */
+
+
+
+
+#container-title-logo{
+    position: absolute;
+    /* border: #1FC7D0 3px solid; */
+    height: 10rem;
+    margin-left: 25px;
+    white-space: nowrap;
+    margin-left: 12rem;
+    font-size: 2rem;
+}
+
+#container-title-logo a:link, #container-title-logo a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#title-behind-logo{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -61.5%);
+}
+
+#title-behind-logo h2{
+    transform: skewX(28deg);
+}
+
+#title-behind-logo h2 span{
+    color: var(--watermelon);
+}
+
+#title-front-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -61.5%);
+}
+
+#title-front-logo h2{
+    transform: skewX(28deg);
+}
+
+#title-diag-logo{
+    position: absolute;
+    overflow: hidden;
+    color: var(--watermelon);
+    width: 9rem;
+    height: 10rem;
+    left: 50%;
+    transform: skew(-28deg);
+    margin-left: -4.5rem;
+}
+
+#title-diag-logo:before{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    background: var(--blueberry) var(--turing-dark) fixed;
+    transform: skewX(28deg);
+}
+
+#title-diag-logo:hover{
+    color: white;
+}
+
+#title-no-diag-logo{
+    position: absolute;
+    width: 9rem;
+    height: 13rem;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(-28deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.toggle-perf{
+    position: absolute;
+    right: 8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox{
+    display: none;
+}
+
+.label{
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px rgba(51, 51, 51, 0.281);
+}
+
+.toggle-perf .label{
+    background: var(--blueberry) var(--turing-dark) fixed;
+}
+
+.toggle-dark .label{
+    background: var(--gris) var(--turing-dark) fixed;
+}
+
+.toggle-dark{
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* MODE HAUTE PERFORMANCES */
+
+
+/* BACKGROUNDS */
+
+.light-performance main{
+    background: white fixed;
+}
+
+body{
+    background: var(--watermelon) var(--turing-dark) fixed;
+}
+
+.light-performance{
+    background: var(--watermelon);
+}
+
+
+.light-performance header, .light-performance #footer-wraper{
+    background: var(--watermelon) fixed;
+}
+
+.dark-mode.light-performance header, .dark-mode.light-performance #footer-wraper{
+    background: var(--watermelon-dark2) fixed;
+}
+
+.dark-mode header, .dark-mode #footer-wraper{
+    background: var(--watermelon-dark2) var(--turing-dark) fixed;
+}
+
+.light-performance .toggle-perf .label{
+    background: var(--blueberry);
+}
+
+/* BACKGROUND DIAG */
+
+.light-performance #diag{
+    background: var(--blueberry) fixed;
+}
+
+.light-performance #diag:before{
+    background: var(--blueberry) fixed;
+}
+
+.light-performance #title-diag-logo:before{
+    background: var(--blueberry) fixed;
+}
+
+.light-performance #title-diag:before{
+    background: var(--watermelon) fixed;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.light-performance #project-red-diag:before{
+    background: var(--watermelon)  fixed;
+}
+
+
+/* DARK-MODE */
+
+.dark-mode main{
+    background: #474747 var(--turing-dark) fixed;
+}
+
+.dark-mode.light-performance main{
+    background: #474747;
+}
+
+.dark-mode #projets{
+    color: rgb(153, 153, 153);
+}
+
+.dark-mode section ul li div img{
+    border-left: 2px #00000052 solid;
+}
+
+.dark-mode #footer-wraper{
+    color: #00000080;
+}
+
+.dark-mode .toggle-dark .label{
+    background: rgb(102, 102, 102) var(--turing-dark) fixed;
+}
+
+.dark-mode.light-performance .toggle-dark .label{
+    background: rgb(102, 102, 102);
+}
+
+.light-performance .toggle-dark .label{
+    background: var(--gris);
+}
+
+.dark-mode #project-text-black{
+    color: var(--blueberry);
+}
+
+.dark-mode #project-red-diag:hover{
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode #project-red-diag{
+    color: var(--watermelon-dark);
+}
+
+
+.dark-mode #logo{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode #logo span{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.dark-mode #title-diag-logo:hover{
+    color: var(--banane-dark);
+}
+
+.dark-mode #title-diag-logo{
+    color: var(--watermelon-dark2);
+}
+
+.dark-mode #title-diag-logo:before{
+    background: var(--blueberry-dark) var(--turing-dark) fixed;
+}
+
+.dark-mode.light-performance #title-diag-logo:before{
+    background: var(--blueberry-dark) fixed;
+}
+
+.dark-mode #container-title-logo a:link, #container-title-logo a:visited{
+    color: var(--watermelon-dark);
+}
+
+.dark-mode #title-behind-logo{
+    color: var(--watermelon-dark);
+}
+
+.dark-mode #title-behind-logo h2 span{
+    color: var(--blueberry-dark);
+}
+
+
+.dark-mode #title-diag:before{
+    background: var(--watermelon-dark2) var(--turing-dark) fixed;
+}
+
+.dark-mode.light-performance #title-diag:before{
+    background: var(--watermelon-dark2)  fixed;
+}
+
+.dark-mode #title-diag:hover{
+    color: var(--banane-dark);
+}
+
+.dark-mode #title-diag{
+    color: var(--watermelon-dark);
+}
+
+
+.dark-mode #title-behind{
+    color: var(--blueberry-dark);
+}
+
+.dark-mode #title-behind h2 span{
+    color: var(--watermelon-dark2);
+}
+
+
+
+
+
+
+
+/* Pour téléphones :  */
+
+@media screen and (max-width: 1200px) {
+    #projets img{
+        width: 600px;
+        height: auto;
+    }
+    
+    main{
+        font-size: 25pt;
+    }
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+    #projet-title h2{
+        font-size: 54pt; /* +150% */
+    }
+
+    #projet-title{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+        margin-left: 25px;
+        /* border: #04f724 1px solid; */
+    }
+
+    #project-red-diag{
+        z-index: 5;
+        position: absolute;
+        overflow: hidden;
+        height: 150px;
+        width: 104.25px;
+        left: 50%;
+        margin-left: -60px;
+        transform: skewX(-26deg);
+        color: var(--blueberry);
+    }
+
+
+
+    #project-red-diag:before{
+        content: "";
+        position: absolute;
+        height: 200%;
+        width: 200%;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+        background: var(--watermelon) url(Images/SVG/Turing\ Patern6-transparent4percent.svg) fixed;
+        transform: skewX(26deg) ;
+    }
+
+    #project-text-black{
+        z-index: 4;
+        position: absolute;
+        height: 100px;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #project-red-diag h2{
+        position: absolute;
+        left: -27px;
+        top: 15px;
+        /* transform: skewX(26deg) translate(-53.3); */
+        z-index: 4;
+    }
+
+
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+}
+
+
+
+
+
+
+
+
+
